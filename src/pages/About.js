@@ -5,7 +5,7 @@ import api from '../api';
 export default function About() {
   const [content, setContent] = useState({});
   const [instaImages, setInstaImages] = useState([]);
-  const [products, setProducts] = useState([]);
+  const [, setProducts] = useState([]);
   const [productImages, setProductImages] = useState([]);
   const [selected, setSelected] = useState(null);
   const [galleryFilter, setGalleryFilter] = useState('All');
