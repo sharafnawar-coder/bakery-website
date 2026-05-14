@@ -18,6 +18,7 @@ export default function AdminProducts() {
   const [editId, setEditId] = useState(null);
   const [editForm, setEditForm] = useState({});
   const [editImageFile, setEditImageFile] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [editImagePreview, setEditImagePreview] = useState('');
   const [uploading, setUploading] = useState(false);
   const [editImages, setEditImages] = useState({});
@@ -26,7 +27,7 @@ export default function AdminProducts() {
   useEffect(() => { load(); }, []);
 
   const handle = e => setForm({ ...form, [e.target.name]: e.target.value });
-
+// eslint-disable-next-line no-unused-vars
   const handleImageChange = (e, isEdit = false) => {
     const file = e.target.files[0];
     if (!file) return;
